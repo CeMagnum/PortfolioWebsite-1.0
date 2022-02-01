@@ -74,11 +74,18 @@ main {
     flex-direction: row;
 }
 
-section{
+section {
     width: 100vw;
 }
 
-main section a, p, h1, h2, h3, h4, h5, h6 {
+main section a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     /* filter: invert(1);
     mix-blend-mode: difference;
     color: black; */
@@ -96,7 +103,7 @@ main section a {
     flex-direction: row; */
 }
 
-main section a:hover{
+main section a:hover {
     transition: filter 1s;
     transition: color;
     filter: invert(1);
@@ -118,7 +125,9 @@ form {
 }
 
 input[type=text],
-select, input[type=email], textarea {
+select,
+input[type=email],
+textarea {
     width: 90%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -142,19 +151,19 @@ input[type=submit] {
     transition: background-color 0.5s;
 }
 
-input[type=submit]:hover{
-    color:black;
+input[type=submit]:hover {
+    color: black;
     background-color: white;
     transition: color 0.5s;
     transition: background-color 0.5s;
 }
 
-section div a{
+section div a {
     font-size: medium;
     margin-left: 10%;
 }
 
-#mail{
+#mail {
     height: 300%;
 }
 
@@ -162,7 +171,7 @@ section div a{
     width: 50%;
 }
 
-#s1i{
+#s1i {
     width: 500px;
     height: auto;
     position: absolute;
@@ -172,7 +181,7 @@ section div a{
     transition: filter 1s;
 }
 
-#s1i:hover{
+#s1i:hover {
     filter: invert(1);
 
 }
@@ -196,33 +205,45 @@ footer p {
     top: 420px;
 }
 
-#header {
-    /* header */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
 }
 
-#AboutMe {
-    /* idunno */
+td,
+th {
+    border: 1px solid #023047;
+    text-align: left;
+    padding: 8px;
 }
 
-#Projects{
-    /* projects */
+tr:nth-child(even) {
+    background-color: #023047;
 }
 
-#Products {
-    /* products */
+ol {
+    list-style-type: upper-roman;
+    font-size: 200%;
+    margin-left: 50px;
 }
 
-/* Cut out text ------------------------------------------------------------ */
+#ctinfo {
+    position: absolute;
+    top: 0%;
+    left: 89%;
+    font-size: 225%;
+}
 
-.Cutout_text {
-    font-size: 200px;
-    text-transform: uppercase;
-    font-weight: 900;
-    margin: 6px;
-    letter-spacing: 2px;
-    background-size: cover;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+#vids {
+    position: absolute;
+    top: 15%;
+    left: 22.5%;
+}
+
+iframe {
+    width: 560px;
+    height: 315px;
 }
 
 /* Animations ----------------------------------------------------------------------------- */
